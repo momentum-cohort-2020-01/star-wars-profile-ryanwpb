@@ -7,3 +7,12 @@
 body {
   font-family: "Oswald", sans-serif;
 }
+
+div#profile-card {
+  max-width: 400px;
+  margin: 0 auto;
+  border: solid 1px #ccc;
+  border-radius: 0.25rem;
+  text-align: center;
+  line-height: 30px;
+}
