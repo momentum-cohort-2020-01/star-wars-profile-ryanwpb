@@ -16,3 +16,14 @@ div#profile-card {
   text-align: center;
   line-height: 30px;
 }
+
+.profile-pic {
+  background-image: url(hanFace.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 100%;
+  margin: 1rem auto;
+}
