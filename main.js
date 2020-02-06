@@ -57,10 +57,11 @@ function renderName() {
   personName.innerHTML = starWarsData.name;
   parentEl.appendChild(personName);
   let birthDate = document.createElement("p");
+  let year = document.querySelector("#profile-year");
   birthDate.innerHTML = "Birth Date: " + starWarsData.birth_year;
-  parentEl.appendChild(birthDate);
+  year.appendChild(birthDate);
   let height = document.createElement("p");
-  birthDate.innerHTML = "Height: " + starWarsData.height;
+  parentEl.innerHTML = "Height: " + starWarsData.height;
   parentEl.appendChild(height);
 }
 
@@ -81,6 +82,7 @@ function renderWorld() {
 function renderFirstShip() {
   let parentEl = document.querySelector("#profile-card");
   let shipName = document.createElement("p");
+  shipName.classList.add("ship-name");
   shipName.innerHTML = "Ship: " + shipOne.name;
   parentEl.appendChild(shipName);
 }
@@ -89,5 +91,6 @@ function renderSecondShip() {
   let parentEl = document.querySelector("#profile-card");
   let shipNameTwo = document.createElement("p");
   shipNameTwo.innerHTML = "Ship: " + shiptwo.name;
+  shipNameTwo.classList.add("ship-name");
   parentEl.appendChild(shipNameTwo);
 }
